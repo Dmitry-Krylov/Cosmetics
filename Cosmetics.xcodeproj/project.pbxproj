@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		835CF2AC2A7BBA3A00DB063B /* CosmeticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2AB2A7BBA3A00DB063B /* CosmeticsApp.swift */; };
+		835CF2AE2A7BBA3A00DB063B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2AD2A7BBA3A00DB063B /* ContentView.swift */; };
+		835CF2B02A7BBA3C00DB063B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835CF2AF2A7BBA3C00DB063B /* Assets.xcassets */; };
+		835CF2B32A7BBA3C00DB063B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835CF2B22A7BBA3C00DB063B /* Preview Assets.xcassets */; };
+		835CF2B52A7BBA3C00DB063B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2B42A7BBA3C00DB063B /* Persistence.swift */; };
+		835CF2B82A7BBA3C00DB063B /* Cosmetics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2B62A7BBA3C00DB063B /* Cosmetics.xcdatamodeld */; };
+		835CF2C22A7BBA3C00DB063B /* CosmeticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2C12A7BBA3C00DB063B /* CosmeticsTests.swift */; };
+		835CF2CC2A7BBA3C00DB063B /* CosmeticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2CB2A7BBA3C00DB063B /* CosmeticsUITests.swift */; };
+		835CF2CE2A7BBA3C00DB063B /* CosmeticsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2CD2A7BBA3C00DB063B /* CosmeticsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		835CF2BE2A7BBA3C00DB063B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 835CF2A02A7BBA3A00DB063B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 835CF2A72A7BBA3A00DB063B;
+			remoteInfo = Cosmetics;
+		};
+		835CF2C82A7BBA3C00DB063B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 835CF2A02A7BBA3A00DB063B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 835CF2A72A7BBA3A00DB063B;
+			remoteInfo = Cosmetics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		835CF2A82A7BBA3A00DB063B /* Cosmetics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cosmetics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		835CF2AB2A7BBA3A00DB063B /* CosmeticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsApp.swift; sourceTree = "<group>"; };
+		835CF2AD2A7BBA3A00DB063B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		835CF2AF2A7BBA3C00DB063B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		835CF2B22A7BBA3C00DB063B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		835CF2B42A7BBA3C00DB063B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		835CF2B72A7BBA3C00DB063B /* Cosmetics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cosmetics.xcdatamodel; sourceTree = "<group>"; };
+		835CF2BD2A7BBA3C00DB063B /* CosmeticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CosmeticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		835CF2C12A7BBA3C00DB063B /* CosmeticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsTests.swift; sourceTree = "<group>"; };
+		835CF2C72A7BBA3C00DB063B /* CosmeticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CosmeticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		835CF2CB2A7BBA3C00DB063B /* CosmeticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsUITests.swift; sourceTree = "<group>"; };
+		835CF2CD2A7BBA3C00DB063B /* CosmeticsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		835CF2A52A7BBA3A00DB063B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835CF2BA2A7BBA3C00DB063B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835CF2C42A7BBA3C00DB063B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		835CF29F2A7BBA3A00DB063B = {
+			isa = PBXGroup;
+			children = (
+				835CF2AA2A7BBA3A00DB063B /* Cosmetics */,
+				835CF2C02A7BBA3C00DB063B /* CosmeticsTests */,
+				835CF2CA2A7BBA3C00DB063B /* CosmeticsUITests */,
+				835CF2A92A7BBA3A00DB063B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		835CF2A92A7BBA3A00DB063B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				835CF2A82A7BBA3A00DB063B /* Cosmetics.app */,
+				835CF2BD2A7BBA3C00DB063B /* CosmeticsTests.xctest */,
+				835CF2C72A7BBA3C00DB063B /* CosmeticsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		835CF2AA2A7BBA3A00DB063B /* Cosmetics */ = {
+			isa = PBXGroup;
+			children = (
+				835CF2AB2A7BBA3A00DB063B /* CosmeticsApp.swift */,
+				835CF2AD2A7BBA3A00DB063B /* ContentView.swift */,
+				835CF2AF2A7BBA3C00DB063B /* Assets.xcassets */,
+				835CF2B42A7BBA3C00DB063B /* Persistence.swift */,
+				835CF2B62A7BBA3C00DB063B /* Cosmetics.xcdatamodeld */,
+				835CF2B12A7BBA3C00DB063B /* Preview Content */,
+			);
+			path = Cosmetics;
+			sourceTree = "<group>";
+		};
+		835CF2B12A7BBA3C00DB063B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				835CF2B22A7BBA3C00DB063B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		835CF2C02A7BBA3C00DB063B /* CosmeticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				835CF2C12A7BBA3C00DB063B /* CosmeticsTests.swift */,
+			);
+			path = CosmeticsTests;
+			sourceTree = "<group>";
+		};
+		835CF2CA2A7BBA3C00DB063B /* CosmeticsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				835CF2CB2A7BBA3C00DB063B /* CosmeticsUITests.swift */,
+				835CF2CD2A7BBA3C00DB063B /* CosmeticsUITestsLaunchTests.swift */,
+			);
+			path = CosmeticsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		835CF2A72A7BBA3A00DB063B /* Cosmetics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835CF2D12A7BBA3C00DB063B /* Build configuration list for PBXNativeTarget "Cosmetics" */;
+			buildPhases = (
+				835CF2A42A7BBA3A00DB063B /* Sources */,
+				835CF2A52A7BBA3A00DB063B /* Frameworks */,
+				835CF2A62A7BBA3A00DB063B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cosmetics;
+			productName = Cosmetics;
+			productReference = 835CF2A82A7BBA3A00DB063B /* Cosmetics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		835CF2BC2A7BBA3C00DB063B /* CosmeticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835CF2D42A7BBA3C00DB063B /* Build configuration list for PBXNativeTarget "CosmeticsTests" */;
+			buildPhases = (
+				835CF2B92A7BBA3C00DB063B /* Sources */,
+				835CF2BA2A7BBA3C00DB063B /* Frameworks */,
+				835CF2BB2A7BBA3C00DB063B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				835CF2BF2A7BBA3C00DB063B /* PBXTargetDependency */,
+			);
+			name = CosmeticsTests;
+			productName = CosmeticsTests;
+			productReference = 835CF2BD2A7BBA3C00DB063B /* CosmeticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		835CF2C62A7BBA3C00DB063B /* CosmeticsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835CF2D72A7BBA3C00DB063B /* Build configuration list for PBXNativeTarget "CosmeticsUITests" */;
+			buildPhases = (
+				835CF2C32A7BBA3C00DB063B /* Sources */,
+				835CF2C42A7BBA3C00DB063B /* Frameworks */,
+				835CF2C52A7BBA3C00DB063B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				835CF2C92A7BBA3C00DB063B /* PBXTargetDependency */,
+			);
+			name = CosmeticsUITests;
+			productName = CosmeticsUITests;
+			productReference = 835CF2C72A7BBA3C00DB063B /* CosmeticsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		835CF2A02A7BBA3A00DB063B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					835CF2A72A7BBA3A00DB063B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					835CF2BC2A7BBA3C00DB063B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 835CF2A72A7BBA3A00DB063B;
+					};
+					835CF2C62A7BBA3C00DB063B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 835CF2A72A7BBA3A00DB063B;
+					};
+				};
+			};
+			buildConfigurationList = 835CF2A32A7BBA3A00DB063B /* Build configuration list for PBXProject "Cosmetics" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 835CF29F2A7BBA3A00DB063B;
+			productRefGroup = 835CF2A92A7BBA3A00DB063B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				835CF2A72A7BBA3A00DB063B /* Cosmetics */,
+				835CF2BC2A7BBA3C00DB063B /* CosmeticsTests */,
+				835CF2C62A7BBA3C00DB063B /* CosmeticsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		835CF2A62A7BBA3A00DB063B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835CF2B32A7BBA3C00DB063B /* Preview Assets.xcassets in Resources */,
+				835CF2B02A7BBA3C00DB063B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835CF2BB2A7BBA3C00DB063B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835CF2C52A7BBA3C00DB063B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		835CF2A42A7BBA3A00DB063B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835CF2B82A7BBA3C00DB063B /* Cosmetics.xcdatamodeld in Sources */,
+				835CF2B52A7BBA3C00DB063B /* Persistence.swift in Sources */,
+				835CF2AE2A7BBA3A00DB063B /* ContentView.swift in Sources */,
+				835CF2AC2A7BBA3A00DB063B /* CosmeticsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835CF2B92A7BBA3C00DB063B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835CF2C22A7BBA3C00DB063B /* CosmeticsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835CF2C32A7BBA3C00DB063B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835CF2CC2A7BBA3C00DB063B /* CosmeticsUITests.swift in Sources */,
+				835CF2CE2A7BBA3C00DB063B /* CosmeticsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		835CF2BF2A7BBA3C00DB063B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 835CF2A72A7BBA3A00DB063B /* Cosmetics */;
+			targetProxy = 835CF2BE2A7BBA3C00DB063B /* PBXContainerItemProxy */;
+		};
+		835CF2C92A7BBA3C00DB063B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 835CF2A72A7BBA3A00DB063B /* Cosmetics */;
+			targetProxy = 835CF2C82A7BBA3C00DB063B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		835CF2CF2A7BBA3C00DB063B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		835CF2D02A7BBA3C00DB063B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		835CF2D22A7BBA3C00DB063B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cosmetics/Preview Content\"";
+				DEVELOPMENT_TEAM = ZMR69NM2NL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dimoon.Cosmetics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		835CF2D32A7BBA3C00DB063B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cosmetics/Preview Content\"";
+				DEVELOPMENT_TEAM = ZMR69NM2NL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dimoon.Cosmetics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		835CF2D52A7BBA3C00DB063B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZMR69NM2NL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dimoon.CosmeticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cosmetics.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cosmetics";
+			};
+			name = Debug;
+		};
+		835CF2D62A7BBA3C00DB063B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZMR69NM2NL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dimoon.CosmeticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cosmetics.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cosmetics";
+			};
+			name = Release;
+		};
+		835CF2D82A7BBA3C00DB063B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZMR69NM2NL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dimoon.CosmeticsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cosmetics;
+			};
+			name = Debug;
+		};
+		835CF2D92A7BBA3C00DB063B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZMR69NM2NL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dimoon.CosmeticsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cosmetics;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		835CF2A32A7BBA3A00DB063B /* Build configuration list for PBXProject "Cosmetics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835CF2CF2A7BBA3C00DB063B /* Debug */,
+				835CF2D02A7BBA3C00DB063B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		835CF2D12A7BBA3C00DB063B /* Build configuration list for PBXNativeTarget "Cosmetics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835CF2D22A7BBA3C00DB063B /* Debug */,
+				835CF2D32A7BBA3C00DB063B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		835CF2D42A7BBA3C00DB063B /* Build configuration list for PBXNativeTarget "CosmeticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835CF2D52A7BBA3C00DB063B /* Debug */,
+				835CF2D62A7BBA3C00DB063B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		835CF2D72A7BBA3C00DB063B /* Build configuration list for PBXNativeTarget "CosmeticsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835CF2D82A7BBA3C00DB063B /* Debug */,
+				835CF2D92A7BBA3C00DB063B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		835CF2B62A7BBA3C00DB063B /* Cosmetics.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				835CF2B72A7BBA3C00DB063B /* Cosmetics.xcdatamodel */,
+			);
+			currentVersion = 835CF2B72A7BBA3C00DB063B /* Cosmetics.xcdatamodel */;
+			path = Cosmetics.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 835CF2A02A7BBA3A00DB063B /* Project object */;
+}
