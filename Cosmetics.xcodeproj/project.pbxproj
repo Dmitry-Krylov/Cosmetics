@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		835CF2AC2A7BBA3A00DB063B /* CosmeticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2AB2A7BBA3A00DB063B /* CosmeticsApp.swift */; };
-		835CF2AE2A7BBA3A00DB063B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2AD2A7BBA3A00DB063B /* ContentView.swift */; };
+		835CF2AE2A7BBA3A00DB063B /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2AD2A7BBA3A00DB063B /* FirstView.swift */; };
 		835CF2B02A7BBA3C00DB063B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835CF2AF2A7BBA3C00DB063B /* Assets.xcassets */; };
 		835CF2B32A7BBA3C00DB063B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835CF2B22A7BBA3C00DB063B /* Preview Assets.xcassets */; };
 		835CF2B52A7BBA3C00DB063B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2B42A7BBA3C00DB063B /* Persistence.swift */; };
@@ -16,6 +16,8 @@
 		835CF2C22A7BBA3C00DB063B /* CosmeticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2C12A7BBA3C00DB063B /* CosmeticsTests.swift */; };
 		835CF2CC2A7BBA3C00DB063B /* CosmeticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2CB2A7BBA3C00DB063B /* CosmeticsUITests.swift */; };
 		835CF2CE2A7BBA3C00DB063B /* CosmeticsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CF2CD2A7BBA3C00DB063B /* CosmeticsUITestsLaunchTests.swift */; };
+		83E8760C2A8AC589000E7163 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8760B2A8AC589000E7163 /* SecondView.swift */; };
+		83F900C12A89300100221E25 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F900C02A89300100221E25 /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 /* Begin PBXFileReference section */
 		835CF2A82A7BBA3A00DB063B /* Cosmetics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cosmetics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		835CF2AB2A7BBA3A00DB063B /* CosmeticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsApp.swift; sourceTree = "<group>"; };
-		835CF2AD2A7BBA3A00DB063B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		835CF2AD2A7BBA3A00DB063B /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		835CF2AF2A7BBA3C00DB063B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		835CF2B22A7BBA3C00DB063B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		835CF2B42A7BBA3C00DB063B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		835CF2C72A7BBA3C00DB063B /* CosmeticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CosmeticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		835CF2CB2A7BBA3C00DB063B /* CosmeticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsUITests.swift; sourceTree = "<group>"; };
 		835CF2CD2A7BBA3C00DB063B /* CosmeticsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83E8760B2A8AC589000E7163 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		83F900C02A89300100221E25 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				835CF2AB2A7BBA3A00DB063B /* CosmeticsApp.swift */,
-				835CF2AD2A7BBA3A00DB063B /* ContentView.swift */,
+				835CF2AD2A7BBA3A00DB063B /* FirstView.swift */,
+				83F900C02A89300100221E25 /* RegistrationView.swift */,
+				83E8760B2A8AC589000E7163 /* SecondView.swift */,
 				835CF2AF2A7BBA3C00DB063B /* Assets.xcassets */,
 				835CF2B42A7BBA3C00DB063B /* Persistence.swift */,
 				835CF2B62A7BBA3C00DB063B /* Cosmetics.xcdatamodeld */,
@@ -263,10 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E8760C2A8AC589000E7163 /* SecondView.swift in Sources */,
 				835CF2B82A7BBA3C00DB063B /* Cosmetics.xcdatamodeld in Sources */,
 				835CF2B52A7BBA3C00DB063B /* Persistence.swift in Sources */,
-				835CF2AE2A7BBA3A00DB063B /* ContentView.swift in Sources */,
+				835CF2AE2A7BBA3A00DB063B /* FirstView.swift in Sources */,
 				835CF2AC2A7BBA3A00DB063B /* CosmeticsApp.swift in Sources */,
+				83F900C12A89300100221E25 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
