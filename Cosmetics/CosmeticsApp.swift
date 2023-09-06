@@ -10,11 +10,14 @@ import SwiftUI
 @main
 struct CosmeticsApp: App {
     let persistenceController = PersistenceController.shared
+    
+    @StateObject var userManager = UserManager()
 
     var body: some Scene {
         WindowGroup {
             FirstView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(userManager)
         }
     }
 }

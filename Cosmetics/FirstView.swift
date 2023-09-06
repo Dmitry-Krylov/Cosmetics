@@ -8,7 +8,6 @@
 import SwiftUI
 import CoreData
 
-// Первый экран
 struct FirstView: View {
     
     @State private var username: String = ""
@@ -48,7 +47,7 @@ struct FirstView: View {
                     Button(action: {
                         if !username.isEmpty && !password.isEmpty {
                             isShowingAlert = true
-//                            NavigationLink(<#LocalizedStringKey#>, destination: SecondView())
+//                            NavigationLink( destination: SecondView())
                         } else {
                             isShowingAlert = false
                         }

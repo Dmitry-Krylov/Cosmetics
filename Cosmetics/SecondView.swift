@@ -15,7 +15,7 @@ struct SecondView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .edgesIgnoringSafeArea(.all)
-                Text("Welcom ....")
+                Text("Welcom, let's select your makeup")
             }
         }
     }

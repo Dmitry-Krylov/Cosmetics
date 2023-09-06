@@ -16,16 +16,16 @@ struct User {
 
 class UserManager: ObservableObject {
     @Published var users: [User] = []
-    
+
     func registerUser(user: User) {
         users.append(user)
     }
 }
 
 struct RegistrationView: View {
-    
+
     @EnvironmentObject var userManager: UserManager
-    
+
     @State private var firstName: String = ""
     @State private var lastName: String = ""
     @State private var email: String = ""
@@ -34,7 +34,7 @@ struct RegistrationView: View {
     @State private var isRegistered: Bool = false
     @State private var isErrorAlertPresented: Bool = false
     @State private var errorMessage: String = ""
-    
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -48,13 +48,15 @@ struct RegistrationView: View {
                         TextField("Name", text: $firstName)
                         TextField("Surname", text: $lastName)
                         Text("Contact Information")
-                        SecureField("Emale", text: $email)
+                        TextField("Emale", text: $email)
                         SecureField("Password", text: $password)
+                        SecureField("Confirm Password", text: $confirmPassword)
                         Button(action: {
                             if password == confirmPassword {
-//                                let newUser = User(firstName: firstName, lastName: lastName, email: email, password: password)
-//                                userManager.registerUser(user: newUser)
+                                let newUser = User(firstName: firstName, lastName: lastName, email: email, password: password)
+                                userManager.registerUser(user: newUser)
                                 isRegistered = true
+                                print(newUser)
                             } else {
                                 isErrorAlertPresented = true
                                 errorMessage = "password does not match"
@@ -62,25 +64,14 @@ struct RegistrationView: View {
                             }
                         }) {
                             Text("Register")
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .padding()
-                                .background(Color.blue)
                                 .cornerRadius(10)
                         }
                         .padding()
                         .background(Color.indigo)
                         .foregroundColor(.black)
                         .cornerRadius(10)
-                        
-                        if isRegistered {
-                            NavigationLink(destination: RegistrationSuccessView()) {
-                                Text("Registration Succesful")
-                                    .foregroundColor(.white)
-                                    .padding()
-                                    .background(Color.indigo)
-                                    .cornerRadius(10)
-                            }
-                        }
                     }
                 }
                 .padding()
@@ -93,13 +84,6 @@ struct RegistrationView: View {
                 }
             }
         }
-    }
-}
-struct RegistrationSuccessView: View {
-    var body: some View {
-        Text("Congratulations! Registration was successful.")
-            .font(.largeTitle)
-            .foregroundColor(.green)
     }
 }
 
